@@ -1,830 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctors for Becerra</title>
-  <meta name="description" content="A coalition of California physicians, nurses & caregivers united behind Xavier Becerra for Governor." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Open Sans', sans-serif; background: #FAF9F7; color: #3E3E3E; -webkit-font-smoothing: antialiased; }
-    img { display: block; max-width: 100%; }
-    a { text-decoration: none; color: inherit; }
-    button { cursor: pointer; font-family: 'Montserrat', sans-serif; }
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Doctors for Becerra</title>
+ <meta name="description" content="A coalition of California physicians, nurses & caregivers united behind Xavier Becerra for Governor." />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+ <style>
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ html { scroll-behavior: smooth; }
+ body { font-family: 'Open Sans', sans-serif; background: #FAF9F7; color: #3E3E3E; -webkit-font-smoothing: antialiased; }
+ img { display: block; max-width: 100%; }
+ a { text-decoration: none; color: inherit; }
+ button { cursor: pointer; font-family: 'Montserrat', sans-serif; }
 
-    /* ── NAV ── */
-    .nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: #fff; border-bottom: 1px solid #E8E8E8;
-      height: 64px; display: flex; align-items: center;
-    }
-    .nav-inner {
-      max-width: 1100px; margin: 0 auto; padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between;
-      width: 100%;
-    }
-    .nav-logo {
-      font-family: 'Montserrat', sans-serif; font-weight: 800;
-      font-size: 1.05rem; color: #1C3D3D; display: flex; align-items: center; gap: 6px;
-    }
-    .nav-logo-highlight {
-      background: #87CBCA; color: #1C3D3D;
-      padding: 3px 10px; border-radius: 4px;
-    }
-    .nav-links { display: flex; align-items: center; gap: 6px; list-style: none; }
-    .nav-links button {
-      background: none; border: none; padding: 8px 14px;
-      font-size: 0.9rem; font-weight: 600; color: #3E3E3E;
-      border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s;
-    }
-    .nav-links button:hover, .nav-links button.active { color: #1C3D3D; border-bottom-color: #87CBCA; }
-    .nav-links .dropdown-btn {
-      display: flex; align-items: center; gap: 4px;
-    }
-    .nav-join-btn {
-      background: #3E3E3E; color: #fff !important; border: none !important;
-      padding: 10px 20px !important; border-radius: 8px !important;
-      border-bottom: none !important; margin-left: 8px;
-      transition: background 0.2s !important;
-    }
-    .nav-join-btn:hover { background: #2A2A2A !important; }
-    .mobile-menu-btn {
-      display: none; background: none; border: none;
-      font-size: 1.5rem; color: #1C3D3D; padding: 8px;
-    }
+ /* ── NAV ── */
+ .nav {
+ position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+ background: #fff; border-bottom: 1px solid #E8E8E8;
+ height: 64px; display: flex; align-items: center;
+ }
+ .nav-inner {
+ max-width: 1100px; margin: 0 auto; padding: 0 24px;
+ display: flex; align-items: center; justify-content: space-between;
+ width: 100%;
+ }
+ .nav-logo {
+ font-family: 'Montserrat', sans-serif; font-weight: 800;
+ font-size: 1.05rem; color: #1C3D3D; display: flex; align-items: center; gap: 6px;
+ }
+ .nav-logo-highlight {
+ background: #87CBCA; color: #1C3D3D;
+ padding: 3px 10px; border-radius: 4px;
+ }
+ .nav-links { display: flex; align-items: center; gap: 6px; list-style: none; }
+ .nav-links button {
+ background: none; border: none; padding: 8px 14px;
+ font-size: 0.9rem; font-weight: 600; color: #3E3E3E;
+ border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s;
+ }
+ .nav-links button:hover, .nav-links button.active { color: #1C3D3D; border-bottom-color: #87CBCA; }
+ .nav-links .dropdown-btn {
+ display: flex; align-items: center; gap: 4px;
+ }
+ .nav-join-btn {
+ background: #3E3E3E; color: #fff !important; border: none !important;
+ padding: 10px 20px !important; border-radius: 8px !important;
+ border-bottom: none !important; margin-left: 8px;
+ transition: background 0.2s !important;
+ }
+ .nav-join-btn:hover { background: #2A2A2A !important; }
+ .mobile-menu-btn {
+ display: none; background: none; border: none;
+ font-size: 1.5rem; color: #1C3D3D; padding: 8px;
+ }
 
-    /* ── PAGES ── */
-    .page { display: none; padding-top: 64px; min-height: 100vh; }
-    .page.active { display: block; }
+ /* ── PAGES ── */
+ .page { display: none; padding-top: 64px; min-height: 100vh; }
+ .page.active { display: block; }
 
-    /* ── HOME PAGE ── */
-    .home-hero {
-      display: grid; grid-template-columns: 1fr 1fr;
-      max-width: 1100px; margin: 0 auto; padding: 80px 24px 60px;
-      gap: 60px; align-items: center; min-height: calc(100vh - 64px);
-    }
-    .hero-eyebrow {
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; color: #4A9C9A; margin-bottom: 18px;
-    }
-    .hero-h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2rem, 3.5vw, 2.8rem);
-      font-weight: 900; line-height: 1.15; color: #1C3D3D;
-      margin-bottom: 20px;
-    }
-    .hero-h1 .highlight {
-      background: #87CBCA; display: inline;
-      padding: 0 4px; line-height: 1.3;
-    }
-    .hero-p {
-      font-size: 1rem; color: #5A5A5A; line-height: 1.75;
-      margin-bottom: 32px; max-width: 480px;
-    }
-    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-    .btn-dark {
-      background: #3E3E3E; color: #fff; border: none;
-      padding: 15px 30px; border-radius: 8px;
-      font-weight: 700; font-size: 1rem;
-      transition: background 0.2s;
-    }
-    .btn-dark:hover { background: #2A2A2A; }
-    .btn-outline {
-      background: #fff; color: #3E3E3E;
-      border: 1.5px solid #CFCFCF;
-      padding: 15px 30px; border-radius: 8px;
-      font-weight: 700; font-size: 1rem;
-      transition: border-color 0.2s, background 0.2s;
-    }
-    .btn-outline:hover { border-color: #3E3E3E; background: #F5F5F5; }
-    .hero-img-block { position: relative; }
-    .hero-img-wrap {
-      border-radius: 16px; overflow: hidden;
-      border: 1px solid #E0EEEE; box-shadow: 0 8px 40px rgba(28,61,61,0.10);
-      background: #E8F5F5; aspect-ratio: 4/5;
-    }
-    .hero-img-wrap img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-    }
-    .hero-img-caption {
-      position: absolute; bottom: 0; left: 0;
-      background: #87CBCA; color: #1C3D3D;
-      padding: 16px 20px; border-radius: 0 0 0 16px;
-      font-weight: 700; font-size: 0.9rem; line-height: 1.4;
-      max-width: 220px;
-    }
+ /* ── HOME PAGE ── */
+ .home-hero {
+ display: grid; grid-template-columns: 1fr 1fr;
+ max-width: 1100px; margin: 0 auto; padding: 80px 24px 60px;
+ gap: 60px; align-items: center; min-height: calc(100vh - 64px);
+ }
+ .hero-eyebrow {
+ font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+ text-transform: uppercase; color: #4A9C9A; margin-bottom: 18px;
+ }
+ .hero-h1 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: clamp(2rem, 3.5vw, 2.8rem);
+ font-weight: 900; line-height: 1.15; color: #1C3D3D;
+ margin-bottom: 20px;
+ }
+ .hero-h1 .highlight {
+ background: #87CBCA; display: inline;
+ padding: 0 4px; line-height: 1.3;
+ }
+ .hero-p {
+ font-size: 1rem; color: #5A5A5A; line-height: 1.75;
+ margin-bottom: 32px; max-width: 480px;
+ }
+ .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+ .btn-dark {
+ background: #3E3E3E; color: #fff; border: none;
+ padding: 15px 30px; border-radius: 8px;
+ font-weight: 700; font-size: 1rem;
+ transition: background 0.2s;
+ }
+ .btn-dark:hover { background: #2A2A2A; }
+ .btn-outline {
+ background: #fff; color: #3E3E3E;
+ border: 1.5px solid #CFCFCF;
+ padding: 15px 30px; border-radius: 8px;
+ font-weight: 700; font-size: 1rem;
+ transition: border-color 0.2s, background 0.2s;
+ }
+ .btn-outline:hover { border-color: #3E3E3E; background: #F5F5F5; }
+ .hero-img-block { position: relative; }
+ .hero-img-wrap {
+ border-radius: 16px; overflow: hidden;
+ border: 1px solid #E0EEEE; box-shadow: 0 8px 40px rgba(28,61,61,0.10);
+ background: #E8F5F5; aspect-ratio: 4/5;
+ }
+ .hero-img-wrap img {
+ width: 100%; height: 100%; object-fit: cover; display: block;
+ }
+ .hero-img-caption {
+ position: absolute; bottom: 0; left: 0;
+ background: #87CBCA; color: #1C3D3D;
+ padding: 16px 20px; border-radius: 0 0 0 16px;
+ font-weight: 700; font-size: 0.9rem; line-height: 1.4;
+ max-width: 220px;
+ }
 
-    /* ── STATS BAR ── */
-    .stats-bar {
-      background: #1C3D3D; padding: 40px 24px;
-    }
-    .stats-inner {
-      max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 24px; text-align: center;
-    }
-    .stat-num {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.4rem; font-weight: 900; color: #87CBCA;
-    }
-    .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-top: 6px; }
+ /* ── STATS BAR ── */
+ .stats-bar {
+ background: #1C3D3D; padding: 40px 24px;
+ }
+ .stats-inner {
+ max-width: 1100px; margin: 0 auto;
+ display: grid; grid-template-columns: repeat(3, 1fr);
+ gap: 24px; text-align: center;
+ }
+ .stat-num {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 2.4rem; font-weight: 900; color: #87CBCA;
+ }
+ .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-top: 6px; }
 
-    /* ── WHY SECTION ── */
-    .why-section { padding: 80px 24px; background: #fff; }
-    .why-inner { max-width: 1100px; margin: 0 auto; }
-    .section-eyebrow {
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; color: #4A9C9A; margin-bottom: 14px;
-    }
-    .section-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-      font-weight: 900; color: #1C3D3D; margin-bottom: 48px;
-      line-height: 1.2;
-    }
-    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-    .why-card {
-      padding: 28px; border-radius: 12px;
-      border: 1px solid #E5E5E5; background: #FAF9F7;
-      border-top: 3px solid #87CBCA;
-    }
-    .why-icon { font-size: 1.8rem; margin-bottom: 16px; }
-    .why-card h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; font-size: 1rem; color: #1C3D3D; margin-bottom: 10px;
-    }
-    .why-card p { font-size: 0.88rem; color: #5A5A5A; line-height: 1.7; }
+ /* ── WHY SECTION ── */
+ .why-section { padding: 80px 24px; background: #fff; }
+ .why-inner { max-width: 1100px; margin: 0 auto; }
+ .section-eyebrow {
+ font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+ text-transform: uppercase; color: #4A9C9A; margin-bottom: 14px;
+ }
+ .section-title {
+ font-family: 'Montserrat', sans-serif;
+ font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+ font-weight: 900; color: #1C3D3D; margin-bottom: 48px;
+ line-height: 1.2;
+ }
+ .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+ .why-card {
+ padding: 28px; border-radius: 12px;
+ border: 1px solid #E5E5E5; background: #FAF9F7;
+ border-top: 3px solid #87CBCA;
+ }
+ .why-icon { font-size: 1.8rem; margin-bottom: 16px; }
+ .why-card h3 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800; font-size: 1rem; color: #1C3D3D; margin-bottom: 10px;
+ }
+ .why-card p { font-size: 0.88rem; color: #5A5A5A; line-height: 1.7; }
 
-    /* ── HEALTH PLAN PAGE ── */
-    .page-hero {
-      background: #1C3D3D; padding: 72px 24px 56px;
-      text-align: center;
-    }
-    .page-hero h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 900; color: #fff; margin-bottom: 14px;
-    }
-    .page-hero p { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 560px; margin: 0 auto; }
-    .plan-section { padding: 72px 24px; }
-    .plan-inner { max-width: 1100px; margin: 0 auto; }
-    .plan-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 40px; }
-    .plan-card {
-      background: #fff; border-radius: 12px; padding: 32px;
-      border: 1px solid #E5E5E5; border-left: 4px solid #87CBCA;
-      box-shadow: 0 2px 12px rgba(28,61,61,0.06);
-    }
-    .plan-card-tag {
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: #4A9C9A; margin-bottom: 10px;
-    }
-    .plan-card h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; font-size: 1.05rem; color: #1C3D3D; margin-bottom: 12px;
-    }
-    .plan-card p { font-size: 0.88rem; color: #5A5A5A; line-height: 1.7; }
-    .plan-stat {
-      margin-top: 16px; padding-top: 16px; border-top: 1px solid #E5E5E5;
-      display: flex; align-items: baseline; gap: 8px;
-    }
-    .plan-stat-num {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.6rem; font-weight: 900; color: #1C3D3D;
-    }
-    .plan-stat-label { font-size: 0.78rem; color: #5A5A5A; }
+ /* ── HEALTH PLAN PAGE ── */
+ .page-hero {
+ background: #1C3D3D; padding: 72px 24px 56px;
+ text-align: center;
+ }
+ .page-hero h1 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: clamp(1.8rem, 3vw, 2.6rem);
+ font-weight: 900; color: #fff; margin-bottom: 14px;
+ }
+ .page-hero p { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 560px; margin: 0 auto; }
+ .plan-section { padding: 72px 24px; }
+ .plan-inner { max-width: 1100px; margin: 0 auto; }
+ .plan-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 40px; }
+ .plan-card {
+ background: #fff; border-radius: 12px; padding: 32px;
+ border: 1px solid #E5E5E5; border-left: 4px solid #87CBCA;
+ box-shadow: 0 2px 12px rgba(28,61,61,0.06);
+ }
+ .plan-card-tag {
+ font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+ text-transform: uppercase; color: #4A9C9A; margin-bottom: 10px;
+ }
+ .plan-card h3 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800; font-size: 1.05rem; color: #1C3D3D; margin-bottom: 12px;
+ }
+ .plan-card p { font-size: 0.88rem; color: #5A5A5A; line-height: 1.7; }
+ .plan-stat {
+ margin-top: 16px; padding-top: 16px; border-top: 1px solid #E5E5E5;
+ display: flex; align-items: baseline; gap: 8px;
+ }
+ .plan-stat-num {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.6rem; font-weight: 900; color: #1C3D3D;
+ }
+ .plan-stat-label { font-size: 0.78rem; color: #5A5A5A; }
 
-    /* ── DISASTER PAGE ── */
-    .disaster-section { padding: 72px 24px; }
-    .disaster-inner { max-width: 1100px; margin: 0 auto; }
-    .disaster-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-top: 40px; }
-    .disaster-list { display: flex; flex-direction: column; gap: 20px; }
-    .disaster-item {
-      display: flex; gap: 16px; align-items: flex-start;
-      padding: 20px; background: #fff; border-radius: 10px;
-      border: 1px solid #E5E5E5; border-left: 3px solid #87CBCA;
-    }
-    .disaster-item-icon { font-size: 1.4rem; flex-shrink: 0; }
-    .disaster-item h4 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; font-size: 0.95rem; color: #1C3D3D; margin-bottom: 6px;
-    }
-    .disaster-item p { font-size: 0.85rem; color: #5A5A5A; line-height: 1.6; }
-    .disaster-quote {
-      background: #1C3D3D; border-radius: 12px; padding: 36px;
-      position: sticky; top: 84px;
-    }
-    .disaster-quote blockquote {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.1rem; font-weight: 700; color: #fff;
-      line-height: 1.5; font-style: italic; margin-bottom: 20px;
-    }
-    .disaster-quote-attr { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+ /* ── DISASTER PAGE ── */
+ .disaster-section { padding: 72px 24px; }
+ .disaster-inner { max-width: 1100px; margin: 0 auto; }
+ .disaster-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-top: 40px; }
+ .disaster-list { display: flex; flex-direction: column; gap: 20px; }
+ .disaster-item {
+ display: flex; gap: 16px; align-items: flex-start;
+ padding: 20px; background: #fff; border-radius: 10px;
+ border: 1px solid #E5E5E5; border-left: 3px solid #87CBCA;
+ }
+ .disaster-item-icon { font-size: 1.4rem; flex-shrink: 0; }
+ .disaster-item h4 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800; font-size: 0.95rem; color: #1C3D3D; margin-bottom: 6px;
+ }
+ .disaster-item p { font-size: 0.85rem; color: #5A5A5A; line-height: 1.6; }
+ .disaster-quote {
+ background: #1C3D3D; border-radius: 12px; padding: 36px;
+ position: sticky; top: 84px;
+ }
+ .disaster-quote blockquote {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.1rem; font-weight: 700; color: #fff;
+ line-height: 1.5; font-style: italic; margin-bottom: 20px;
+ }
+ .disaster-quote-attr { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
 
-    /* ── JOIN PAGE ── */
-    .join-section { padding: 72px 24px; }
-    .join-inner {
-      max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
-    }
-    .join-content h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-      font-weight: 900; color: #1C3D3D; margin-bottom: 16px;
-    }
-    .join-content p { font-size: 0.95rem; color: #5A5A5A; line-height: 1.75; margin-bottom: 24px; }
-    .join-benefits { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
-    .join-benefits li {
-      display: flex; gap: 10px; align-items: flex-start;
-      font-size: 0.9rem; color: #3E3E3E;
-    }
-    .join-benefits li::before {
-      content: '✓'; background: #87CBCA; color: #1C3D3D;
-      border-radius: 50%; width: 20px; height: 20px; min-width: 20px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 0.7rem; font-weight: 900; margin-top: 1px;
-    }
-    .join-form-card {
-      background: #fff; border: 1px solid #E5E5E5; border-radius: 14px;
-      padding: 34px; box-shadow: 0 4px 12px rgba(62,62,62,0.08);
-    }
-    .join-form-card h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; font-size: 1.2rem; color: #1C3D3D; margin-bottom: 6px;
-    }
-    .join-form-card .form-sub {
-      font-size: 0.85rem; color: #5A5A5A; margin-bottom: 24px;
-    }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .form-group { display: flex; flex-direction: column; gap: 6px; }
-    .form-group.full { grid-column: 1 / -1; }
-    .form-group label {
-      font-size: 0.78rem; font-weight: 700; color: #3E3E3E; letter-spacing: 0.04em;
-    }
-    .form-group label span { color: #C8553D; }
-    .form-group input, .form-group select {
-      width: 100%; padding: 12px 14px;
-      border: 1.5px solid #CFCFCF; border-radius: 6px;
-      font-family: 'Open Sans', sans-serif; font-size: 0.9rem; color: #3E3E3E;
-      background: #fff; transition: border-color 0.2s; outline: none;
-    }
-    .form-group input:focus, .form-group select:focus { border-color: #4A9C9A; }
-    .form-group input::placeholder { color: #ABABAB; }
-    .form-checkbox {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 0.88rem; color: #3E3E3E; margin-top: 4px;
-      cursor: pointer;
-    }
-    .form-checkbox input { width: auto; }
-    .form-error {
-      background: #FFF0EE; border: 1px solid #F5C6C0;
-      border-radius: 6px; padding: 10px 14px;
-      font-size: 0.85rem; color: #C8553D; display: none;
-    }
-    .form-error.show { display: block; }
-    .btn-submit {
-      width: 100%; background: #3E3E3E; color: #fff; border: none;
-      padding: 15px; border-radius: 8px; font-family: 'Montserrat', sans-serif;
-      font-weight: 700; font-size: 0.95rem; margin-top: 16px;
-      transition: background 0.2s;
-    }
-    .btn-submit:hover { background: #2A2A2A; }
-    .form-note {
-      font-size: 0.72rem; color: #ABABAB; text-align: center; margin-top: 12px;
-    }
-    .form-success {
-      background: #fff; border: 1px solid #E5E5E5; border-radius: 14px;
-      padding: 40px; box-shadow: 0 12px 32px rgba(62,62,62,0.10);
-      text-align: center; display: none;
-    }
-    .form-success.show { display: block; }
-    .success-icon {
-      width: 60px; height: 60px; border-radius: 50%;
-      background: #87CBCA; color: #1C3D3D;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.8rem; font-weight: 900; margin: 0 auto 22px;
-    }
-    .form-success h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; font-size: 1.5rem; color: #1C3D3D; margin-bottom: 10px;
-    }
-    .form-success p { color: #5A5A5A; font-size: 0.95rem; line-height: 1.65; }
+ /* ── JOIN PAGE ── */
+ .join-section { padding: 72px 24px; }
+ .join-inner {
+ max-width: 1100px; margin: 0 auto;
+ display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
+ }
+ .join-content h2 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+ font-weight: 900; color: #1C3D3D; margin-bottom: 16px;
+ }
+ .join-content p { font-size: 0.95rem; color: #5A5A5A; line-height: 1.75; margin-bottom: 24px; }
+ .join-benefits { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+ .join-benefits li {
+ display: flex; gap: 10px; align-items: flex-start;
+ font-size: 0.9rem; color: #3E3E3E;
+ }
+ .join-benefits li::before {
+ content: ''; background: #87CBCA; color: #1C3D3D;
+ border-radius: 50%; width: 20px; height: 20px; min-width: 20px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 0.7rem; font-weight: 900; margin-top: 1px;
+ }
+ .join-form-card {
+ background: #fff; border: 1px solid #E5E5E5; border-radius: 14px;
+ padding: 34px; box-shadow: 0 4px 12px rgba(62,62,62,0.08);
+ }
+ .join-form-card h3 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800; font-size: 1.2rem; color: #1C3D3D; margin-bottom: 6px;
+ }
+ .join-form-card .form-sub {
+ font-size: 0.85rem; color: #5A5A5A; margin-bottom: 24px;
+ }
+ .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+ .form-group { display: flex; flex-direction: column; gap: 6px; }
+ .form-group.full { grid-column: 1 / -1; }
+ .form-group label {
+ font-size: 0.78rem; font-weight: 700; color: #3E3E3E; letter-spacing: 0.04em;
+ }
+ .form-group label span { color: #C8553D; }
+ .form-group input, .form-group select {
+ width: 100%; padding: 12px 14px;
+ border: 1.5px solid #CFCFCF; border-radius: 6px;
+ font-family: 'Open Sans', sans-serif; font-size: 0.9rem; color: #3E3E3E;
+ background: #fff; transition: border-color 0.2s; outline: none;
+ }
+ .form-group input:focus, .form-group select:focus { border-color: #4A9C9A; }
+ .form-group input::placeholder { color: #ABABAB; }
+ .form-checkbox {
+ display: flex; align-items: center; gap: 10px;
+ font-size: 0.88rem; color: #3E3E3E; margin-top: 4px;
+ cursor: pointer;
+ }
+ .form-checkbox input { width: auto; }
+ .form-error {
+ background: #FFF0EE; border: 1px solid #F5C6C0;
+ border-radius: 6px; padding: 10px 14px;
+ font-size: 0.85rem; color: #C8553D; display: none;
+ }
+ .form-error.show { display: block; }
+ .btn-submit {
+ width: 100%; background: #3E3E3E; color: #fff; border: none;
+ padding: 15px; border-radius: 8px; font-family: 'Montserrat', sans-serif;
+ font-weight: 700; font-size: 0.95rem; margin-top: 16px;
+ transition: background 0.2s;
+ }
+ .btn-submit:hover { background: #2A2A2A; }
+ .form-note {
+ font-size: 0.72rem; color: #ABABAB; text-align: center; margin-top: 12px;
+ }
+ .form-success {
+ background: #fff; border: 1px solid #E5E5E5; border-radius: 14px;
+ padding: 40px; box-shadow: 0 12px 32px rgba(62,62,62,0.10);
+ text-align: center; display: none;
+ }
+ .form-success.show { display: block; }
+ .success-icon {
+ width: 60px; height: 60px; border-radius: 50%;
+ background: #87CBCA; color: #1C3D3D;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 1.8rem; font-weight: 900; margin: 0 auto 22px;
+ }
+ .form-success h2 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 800; font-size: 1.5rem; color: #1C3D3D; margin-bottom: 10px;
+ }
+ .form-success p { color: #5A5A5A; font-size: 0.95rem; line-height: 1.65; }
 
-    /* ── FOOTER ── */
-    .footer { background: #1C3D3D; padding: 48px 24px 28px; margin-top: 0; }
-    .footer-inner {
-      max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px;
-      margin-bottom: 40px;
-    }
-    .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-top: 12px; }
-    .footer-logo {
-      font-family: 'Montserrat', sans-serif; font-weight: 800;
-      font-size: 1rem; color: #fff; display: flex; align-items: center; gap: 6px;
-    }
-    .footer-logo span { background: #87CBCA; color: #1C3D3D; padding: 2px 8px; border-radius: 4px; }
-    .footer-col h4 {
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 16px;
-    }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col button {
-      background: none; border: none; padding: 0;
-      font-size: 0.87rem; color: rgba(255,255,255,0.65);
-      font-family: 'Open Sans', sans-serif; text-align: left;
-      transition: color 0.2s;
-    }
-    .footer-col button:hover { color: #87CBCA; }
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 24px;
-      font-size: 0.72rem; color: rgba(255,255,255,0.3); line-height: 1.6;
-      max-width: 1100px; margin: 0 auto;
-    }
+ /* ── FOOTER ── */
+ .footer { background: #1C3D3D; padding: 48px 24px 28px; margin-top: 0; }
+ .footer-inner {
+ max-width: 1100px; margin: 0 auto;
+ display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px;
+ margin-bottom: 40px;
+ }
+ .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-top: 12px; }
+ .footer-logo {
+ font-family: 'Montserrat', sans-serif; font-weight: 800;
+ font-size: 1rem; color: #fff; display: flex; align-items: center; gap: 6px;
+ }
+ .footer-logo span { background: #87CBCA; color: #1C3D3D; padding: 2px 8px; border-radius: 4px; }
+ .footer-col h4 {
+ font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+ text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 16px;
+ }
+ .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+ .footer-col button {
+ background: none; border: none; padding: 0;
+ font-size: 0.87rem; color: rgba(255,255,255,0.65);
+ font-family: 'Open Sans', sans-serif; text-align: left;
+ transition: color 0.2s;
+ }
+ .footer-col button:hover { color: #87CBCA; }
+ .footer-bottom {
+ border-top: 1px solid rgba(255,255,255,0.1);
+ padding-top: 24px;
+ font-size: 0.72rem; color: rgba(255,255,255,0.3); line-height: 1.6;
+ max-width: 1100px; margin: 0 auto;
+ }
 
-    /* ── MOBILE ── */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .nav-links.open {
-        display: flex; flex-direction: column;
-        position: absolute; top: 64px; left: 0; right: 0;
-        background: #fff; padding: 16px 24px;
-        border-bottom: 1px solid #E8E8E8; gap: 4px;
-      }
-      .mobile-menu-btn { display: block; }
-      .home-hero { grid-template-columns: 1fr; padding: 48px 24px 40px; gap: 40px; }
-      .hero-img-block { order: -1; }
-      .why-grid { grid-template-columns: 1fr; }
-      .plan-grid { grid-template-columns: 1fr; }
-      .disaster-grid { grid-template-columns: 1fr; }
-      .join-inner { grid-template-columns: 1fr; }
-      .stats-inner { grid-template-columns: 1fr; }
-      .footer-inner { grid-template-columns: 1fr; }
-      .form-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+ /* ── MOBILE ── */
+ @media (max-width: 768px) {
+ .nav-links { display: none; }
+ .nav-links.open {
+ display: flex; flex-direction: column;
+ position: absolute; top: 64px; left: 0; right: 0;
+ background: #fff; padding: 16px 24px;
+ border-bottom: 1px solid #E8E8E8; gap: 4px;
+ }
+ .mobile-menu-btn { display: block; }
+ .home-hero { grid-template-columns: 1fr; padding: 48px 24px 40px; gap: 40px; }
+ .hero-img-block { order: -1; }
+ .why-grid { grid-template-columns: 1fr; }
+ .plan-grid { grid-template-columns: 1fr; }
+ .disaster-grid { grid-template-columns: 1fr; }
+ .join-inner { grid-template-columns: 1fr; }
+ .stats-inner { grid-template-columns: 1fr; }
+ .footer-inner { grid-template-columns: 1fr; }
+ .form-grid { grid-template-columns: 1fr; }
+ }
+ </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-logo">
-      Doctors for <span class="nav-logo-highlight">Becerra</span>
-    </div>
-    <button class="mobile-menu-btn" id="mobileBtn" aria-label="Menu">☰</button>
-    <ul class="nav-links" id="navLinks">
-      <li><button onclick="showPage('home')" class="active" id="nav-home">Home</button></li>
-      <li><button onclick="showPage('plan')" id="nav-plan">Health Plan</button></li>
-      <li><button onclick="showPage('disaster')" id="nav-disaster">Disaster Readiness</button></li>
-      <li><button onclick="showPage('join')" id="nav-join">Join the list</button></li>
-      <li><a href="https://www.xavierbecerra2026.com/" target="_blank" rel="noopener noreferrer" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.9rem;color:#3E3E3E;padding:8px 14px;border-bottom:2px solid transparent;transition:color 0.2s;white-space:nowrap;">Official Campaign</a></li>
-      <li><button onclick="showPage('join')" class="nav-join-btn">Join the list</button></li>
-    </ul>
-  </div>
+ <div class="nav-inner">
+ <div class="nav-logo">
+ Doctors for <span class="nav-logo-highlight">Becerra</span>
+ </div>
+ <button class="mobile-menu-btn" id="mobileBtn" aria-label="Menu"></button>
+ <ul class="nav-links" id="navLinks">
+ <li><button onclick="showPage('home')" class="active" id="nav-home">Home</button></li>
+ <li><button onclick="showPage('plan')" id="nav-plan">Health Plan</button></li>
+ <li><button onclick="showPage('disaster')" id="nav-disaster">Disaster Readiness</button></li>
+ <li><button onclick="showPage('join')" id="nav-join">Join the list</button></li>
+ <li><a href="https://www.xavierbecerra2026.com/" target="_blank" rel="noopener noreferrer" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.9rem;color:#3E3E3E;padding:8px 14px;border-bottom:2px solid transparent;transition:color 0.2s;white-space:nowrap;">Official Campaign</a></li>
+ <li><button onclick="showPage('join')" class="nav-join-btn">Join the list</button></li>
+ </ul>
+ </div>
 </nav>
 
 <!-- ══ HOME PAGE ══════════════════════════════════════════════════════ -->
 <div class="page active" id="page-home">
 
-  <div class="home-hero">
-    <div class="hero-text">
-      <div class="hero-eyebrow">A Coalition of California Physicians, Nurses &amp; Caregivers</div>
-      <h1 class="hero-h1">
-        When healthcare is on the ballot,<br>
-        <span class="highlight">doctors show up.</span>
-      </h1>
-      <p class="hero-p">
-        Xavier Becerra spent his career bringing the cost of care down — negotiating drug prices, saving the ACA, and taking on the health systems that put profit over patients. Now we need providers at the table to help build the system California deserves.
-      </p>
-      <div class="hero-btns">
-        <button class="btn-dark" onclick="showPage('join')">Add your name &amp; join the list</button>
-        <button class="btn-outline" onclick="showPage('plan')">Read the health plan</button>
-      </div>
-    </div>
-    <div class="hero-img-block">
-      <div class="hero-img-wrap">
-        <img src="https://drshaps.github.io/doctors4xavierbecerra/becerra.jpg" alt="Xavier Becerra" />
-      </div>
-      <div class="hero-img-caption">Former HHS Secretary &amp;<br>California Attorney General</div>
-    </div>
-  </div>
+ <div class="home-hero">
+ <div class="hero-text">
+ <div class="hero-eyebrow">A Coalition of California Physicians, Nurses &amp; Caregivers</div>
+ <h1 class="hero-h1">
+ When healthcare is on the ballot,<br>
+ <span class="highlight">doctors show up.</span>
+ </h1>
+ <p class="hero-p">
+ Xavier Becerra spent his career bringing the cost of care down - negotiating drug prices, saving the ACA, and taking on the health systems that put profit over patients. Now we need providers at the table to help build the system California deserves.
+ </p>
+ <div class="hero-btns">
+ <button class="btn-dark" onclick="showPage('join')">Add your name &amp; join the list</button>
+ <button class="btn-outline" onclick="showPage('plan')">Read the health plan</button>
+ </div>
+ </div>
+ <div class="hero-img-block">
+ <div class="hero-img-wrap">
+ <img src="https://drshaps.github.io/doctors4xavierbecerra/becerra.jpg" alt="Xavier Becerra" />
+ </div>
+ <div class="hero-img-caption">Former HHS Secretary &amp;<br>California Attorney General</div>
+ </div>
+ </div>
 
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div>
-        <div class="stat-num">15M+</div>
-        <div class="stat-label">Californians on Medi-Cal we're fighting for</div>
-      </div>
-      <div>
-        <div class="stat-num">$35</div>
-        <div class="stat-label">Insulin price cap already secured</div>
-      </div>
-      <div>
-        <div class="stat-num">Nov 5</div>
-        <div class="stat-label">Election Day 2026</div>
-      </div>
-    </div>
-  </div>
+ <div class="stats-bar">
+ <div class="stats-inner">
+ <div>
+ <div class="stat-num">15M+</div>
+ <div class="stat-label">Californians on Medi-Cal we're fighting for</div>
+ </div>
+ <div>
+ <div class="stat-num">$35</div>
+ <div class="stat-label">Insulin price cap already secured</div>
+ </div>
+ <div>
+ <div class="stat-num">Nov 5</div>
+ <div class="stat-label">Election Day 2026</div>
+ </div>
+ </div>
+ </div>
 
-  <div class="why-section">
-    <div class="why-inner">
-      <div class="section-eyebrow">Why We Stand</div>
-      <h2 class="section-title">Doctors don't endorse candidates lightly.</h2>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">🛡️</div>
-          <h3>Medi-Cal Is Under Threat</h3>
-          <p>Fifteen million Californians depend on Medi-Cal. Federal rollback proposals would devastate our most vulnerable patients. Xavier Becerra will fight to protect every dollar.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">💊</div>
-          <h3>Drug Prices Are Unsustainable</h3>
-          <p>We watch patients ration insulin and skip medications every day. Becerra built CalRx and has the track record to actually bend the cost curve. This is personal for us.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🤝</div>
-          <h3>He Listens to Physicians</h3>
-          <p>As California AG and U.S. HHS Secretary, Xavier Becerra worked alongside clinicians — not against them. He understands what happens at the bedside.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="why-section">
+ <div class="why-inner">
+ <div class="section-eyebrow">Why We Stand</div>
+ <h2 class="section-title">Doctors don't endorse candidates lightly.</h2>
+ <div class="why-grid">
+ <div class="why-card">
+ <div class="why-icon">️</div>
+ <h3>Medi-Cal Is Under Threat</h3>
+ <p>Fifteen million Californians depend on Medi-Cal. Federal rollback proposals would devastate our most vulnerable patients. Xavier Becerra will fight to protect every dollar.</p>
+ </div>
+ <div class="why-card">
+ <div class="why-icon"></div>
+ <h3>Drug Prices Are Unsustainable</h3>
+ <p>We watch patients ration insulin and skip medications every day. Becerra built CalRx and has the track record to actually bend the cost curve. This is personal for us.</p>
+ </div>
+ <div class="why-card">
+ <div class="why-icon"></div>
+ <h3>He Listens to Physicians</h3>
+ <p>As California AG and U.S. HHS Secretary, Xavier Becerra worked alongside clinicians - not against them. He understands what happens at the bedside.</p>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <div style="background:#1C3D3D; padding:72px 24px; text-align:center;">
-    <div style="max-width:680px; margin:0 auto;">
-      <div style="font-size:3rem; color:#87CBCA; line-height:0.5; margin-bottom:20px; font-family:'Montserrat',sans-serif;">"</div>
-      <blockquote style="font-family:'Montserrat',sans-serif; font-size:clamp(1.1rem,2vw,1.5rem); font-weight:700; color:#fff; line-height:1.5; font-style:italic; margin-bottom:28px;">
-        I've seen what happens when healthcare policy fails patients. We can't afford to get this election wrong. That's why I'm standing with Xavier Becerra.
-      </blockquote>
-      <div style="font-size:0.85rem; color:rgba(255,255,255,0.55);">California Physician Coalition Member</div>
-      <button onclick="showPage('join')" style="margin-top:32px; background:#87CBCA; color:#1C3D3D; border:none; padding:15px 34px; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:1rem; cursor:pointer;">
-        Add your name to the fight →
-      </button>
-    </div>
-  </div>
+ <div style="background:#1C3D3D; padding:72px 24px; text-align:center;">
+ <div style="max-width:680px; margin:0 auto;">
+ <div style="font-size:3rem; color:#87CBCA; line-height:0.5; margin-bottom:20px; font-family:'Montserrat',sans-serif;">"</div>
+ <blockquote style="font-family:'Montserrat',sans-serif; font-size:clamp(1.1rem,2vw,1.5rem); font-weight:700; color:#fff; line-height:1.5; font-style:italic; margin-bottom:28px;">
+ I've seen what happens when healthcare policy fails patients. We can't afford to get this election wrong. That's why I'm standing with Xavier Becerra.
+ </blockquote>
+ <div style="font-size:0.85rem; color:rgba(255,255,255,0.55);">California Physician Coalition Member</div>
+ <button onclick="showPage('join')" style="margin-top:32px; background:#87CBCA; color:#1C3D3D; border:none; padding:15px 34px; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:1rem; cursor:pointer;">
+ Add your name to the fight
+ </button>
+ </div>
+ </div>
 
-  <div class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">Doctors for <span>Becerra</span></div>
-        <p>A physician-led coalition supporting Xavier Becerra for Governor of California — because protecting patients means protecting healthcare.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Pages</h4>
-        <ul>
-          <li><button onclick="showPage('home')">Home</button></li>
-          <li><button onclick="showPage('plan')">Health Plan</button></li>
-          <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
-          <li><button onclick="showPage('join')">Join the List</button></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><button onclick="showPage('join')">Sign Up</button></li>
-          <li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee. This is an independent physician advocacy coalition.
-    </div>
-  </div>
+ <div class="footer">
+ <div class="footer-inner">
+ <div class="footer-brand">
+ <div class="footer-logo">Doctors for <span>Becerra</span></div>
+ <p>A physician-led coalition supporting Xavier Becerra for Governor of California - because protecting patients means protecting healthcare.</p>
+ </div>
+ <div class="footer-col">
+ <h4>Pages</h4>
+ <ul>
+ <li><button onclick="showPage('home')">Home</button></li>
+ <li><button onclick="showPage('plan')">Health Plan</button></li>
+ <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
+ <li><button onclick="showPage('join')">Join the List</button></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Contact</h4>
+ <ul>
+ <li><button onclick="showPage('join')">Sign Up</button></li>
+ <li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee. This is an independent physician advocacy coalition.
+ </div>
+ </div>
 </div>
 
 <!-- ══ HEALTH PLAN PAGE ═══════════════════════════════════════════════ -->
 <div class="page" id="page-plan">
-  <div class="page-hero">
-    <h1>Becerra's Health Plan</h1>
-    <p>Six priorities where his leadership will directly impact patient outcomes across California.</p>
-  </div>
-  <div class="plan-section">
-    <div class="plan-inner">
-      <div class="section-eyebrow">The Issues</div>
-      <h2 class="section-title">What we're fighting for in 2026.</h2>
-      <div class="plan-grid">
-        <div class="plan-card">
-          <div class="plan-card-tag">Priority 01 — Medi-Cal Defense</div>
-          <h3>Protecting coverage for 15 million Californians</h3>
-          <p>Medi-Cal is the backbone of California's healthcare safety net. As federal cuts are proposed in Washington, we need a governor who will go to the mat to protect enrollees — especially low-income families, seniors, people with disabilities, and undocumented immigrants who have nowhere else to turn.</p>
-          <div class="plan-stat">
-            <span class="plan-stat-num">15M</span>
-            <span class="plan-stat-label">Californians enrolled in Medi-Cal</span>
-          </div>
-        </div>
-        <div class="plan-card">
-          <div class="plan-card-tag">Priority 02 — Drug Pricing & CalRx</div>
-          <h3>Making medications affordable for every Californian</h3>
-          <p>As HHS Secretary, Becerra fought pharmaceutical companies on insulin prices. As Governor, he will expand CalRx — California's generic drug initiative — and use the state's purchasing power to negotiate lower prices on the medications patients actually need.</p>
-          <div class="plan-stat">
-            <span class="plan-stat-num">$35</span>
-            <span class="plan-stat-label">Insulin price cap already secured</span>
-          </div>
-        </div>
-        <div class="plan-card">
-          <div class="plan-card-tag">Priority 03 — Reproductive Healthcare</div>
-          <h3>Ensuring every woman receives the care she needs</h3>
-          <p>California must remain a safe haven for reproductive healthcare. Becerra will defend existing protections, ensure abortion access statewide, and fight against federal attempts to restrict reproductive rights in our state.</p>
-        </div>
-        <div class="plan-card">
-          <div class="plan-card-tag">Priority 04 — Healthcare Workforce</div>
-          <h3>Solving California's physician shortage crisis</h3>
-          <p>California faces a growing physician shortage — especially in rural and underserved communities. Becerra's plan expands loan forgiveness, community health worker pipelines, and residency slots to get more providers where patients need them most.</p>
-        </div>
-        <div class="plan-card">
-          <div class="plan-card-tag">Priority 05 — Telehealth</div>
-          <h3>Expanding access to rural and underserved communities</h3>
-          <p>The pandemic proved telehealth works. Becerra will make pandemic-era telehealth expansions permanent, invest in broadband infrastructure, and close the rural digital divide so every Californian can see a doctor from home.</p>
-        </div>
-        <div class="plan-card">
-          <div class="plan-card-tag">Priority 06 — Corporate Accountability</div>
-          <h3>Taking on health systems that put profit over patients</h3>
-          <p>Becerra spent a decade as California's AG going after pharmaceutical companies and insurance corporations. As Governor, he'll strengthen price transparency laws, cap executive pay at nonprofit hospitals, and hold insurers accountable for denying care.</p>
-        </div>
-      </div>
-      <div style="text-align:center; margin-top:48px;">
-        <button onclick="showPage('join')" class="btn-dark" style="font-size:1rem; padding:16px 36px;">
-          Stand with us — Add your name →
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">Doctors for <span>Becerra</span></div>
-        <p>A physician-led coalition supporting Xavier Becerra for Governor of California.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Pages</h4>
-        <ul>
-          <li><button onclick="showPage('home')">Home</button></li>
-          <li><button onclick="showPage('plan')">Health Plan</button></li>
-          <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
-          <li><button onclick="showPage('join')">Join the List</button></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul><li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li></ul>
-      </div>
-    </div>
-    <div class="footer-bottom">Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee.</div>
-  </div>
+ <div class="page-hero">
+ <h1>Becerra's Health Plan</h1>
+ <p>Six priorities where his leadership will directly impact patient outcomes across California.</p>
+ </div>
+ <div class="plan-section">
+ <div class="plan-inner">
+ <div class="section-eyebrow">The Issues</div>
+ <h2 class="section-title">What we're fighting for in 2026.</h2>
+ <div class="plan-grid">
+ <div class="plan-card">
+ <div class="plan-card-tag">Priority 01 - Medi-Cal Defense</div>
+ <h3>Protecting coverage for 15 million Californians</h3>
+ <p>Medi-Cal is the backbone of California's healthcare safety net. As federal cuts are proposed in Washington, we need a governor who will go to the mat to protect enrollees - especially low-income families, seniors, people with disabilities, and undocumented immigrants who have nowhere else to turn.</p>
+ <div class="plan-stat">
+ <span class="plan-stat-num">15M</span>
+ <span class="plan-stat-label">Californians enrolled in Medi-Cal</span>
+ </div>
+ </div>
+ <div class="plan-card">
+ <div class="plan-card-tag">Priority 02 - Drug Pricing & CalRx</div>
+ <h3>Making medications affordable for every Californian</h3>
+ <p>As HHS Secretary, Becerra fought pharmaceutical companies on insulin prices. As Governor, he will expand CalRx - California's generic drug initiative - and use the state's purchasing power to negotiate lower prices on the medications patients actually need.</p>
+ <div class="plan-stat">
+ <span class="plan-stat-num">$35</span>
+ <span class="plan-stat-label">Insulin price cap already secured</span>
+ </div>
+ </div>
+ <div class="plan-card">
+ <div class="plan-card-tag">Priority 03 - Reproductive Healthcare</div>
+ <h3>Ensuring every woman receives the care she needs</h3>
+ <p>California must remain a safe haven for reproductive healthcare. Becerra will defend existing protections, ensure abortion access statewide, and fight against federal attempts to restrict reproductive rights in our state.</p>
+ </div>
+ <div class="plan-card">
+ <div class="plan-card-tag">Priority 04 - Healthcare Workforce</div>
+ <h3>Solving California's physician shortage crisis</h3>
+ <p>California faces a growing physician shortage - especially in rural and underserved communities. Becerra's plan expands loan forgiveness, community health worker pipelines, and residency slots to get more providers where patients need them most.</p>
+ </div>
+ <div class="plan-card">
+ <div class="plan-card-tag">Priority 05 - Telehealth</div>
+ <h3>Expanding access to rural and underserved communities</h3>
+ <p>The pandemic proved telehealth works. Becerra will make pandemic-era telehealth expansions permanent, invest in broadband infrastructure, and close the rural digital divide so every Californian can see a doctor from home.</p>
+ </div>
+ <div class="plan-card">
+ <div class="plan-card-tag">Priority 06 - Corporate Accountability</div>
+ <h3>Taking on health systems that put profit over patients</h3>
+ <p>Becerra spent a decade as California's AG going after pharmaceutical companies and insurance corporations. As Governor, he'll strengthen price transparency laws, cap executive pay at nonprofit hospitals, and hold insurers accountable for denying care.</p>
+ </div>
+ </div>
+ <div style="text-align:center; margin-top:48px;">
+ <button onclick="showPage('join')" class="btn-dark" style="font-size:1rem; padding:16px 36px;">
+ Stand with us - Add your name
+ </button>
+ </div>
+ </div>
+ </div>
+ <div class="footer">
+ <div class="footer-inner">
+ <div class="footer-brand">
+ <div class="footer-logo">Doctors for <span>Becerra</span></div>
+ <p>A physician-led coalition supporting Xavier Becerra for Governor of California.</p>
+ </div>
+ <div class="footer-col">
+ <h4>Pages</h4>
+ <ul>
+ <li><button onclick="showPage('home')">Home</button></li>
+ <li><button onclick="showPage('plan')">Health Plan</button></li>
+ <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
+ <li><button onclick="showPage('join')">Join the List</button></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Contact</h4>
+ <ul><li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li></ul>
+ </div>
+ </div>
+ <div class="footer-bottom">Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee.</div>
+ </div>
 </div>
 
 <!-- ══ DISASTER READINESS PAGE ════════════════════════════════════════ -->
 <div class="page" id="page-disaster">
-  <div class="page-hero">
-    <h1>Disaster Readiness</h1>
-    <p>After the LA fires, California's healthcare system must be built to withstand what's coming. Becerra will make it so.</p>
-  </div>
-  <div class="disaster-section">
-    <div class="disaster-inner">
-      <div class="section-eyebrow">The Plan</div>
-      <h2 class="section-title">A climate-ready healthcare system.</h2>
-      <div class="disaster-grid">
-        <div class="disaster-list">
-          <div class="disaster-item">
-            <div class="disaster-item-icon">🏥</div>
-            <div>
-              <h4>Disaster-Resilient Hospitals</h4>
-              <p>Mandate seismic and wildfire upgrades for all critical care facilities. Ensure backup power and water for every hospital and clinic in high-risk zones.</p>
-            </div>
-          </div>
-          <div class="disaster-item">
-            <div class="disaster-item-icon">💊</div>
-            <div>
-              <h4>Emergency Drug & Supply Stockpiles</h4>
-              <p>Build a California-controlled strategic reserve of essential medications, PPE, and medical equipment so we're never caught unprepared again.</p>
-            </div>
-          </div>
-          <div class="disaster-item">
-            <div class="disaster-item-icon">📱</div>
-            <div>
-              <h4>Telehealth Emergency Protocols</h4>
-              <p>Pre-authorize telehealth surge capacity so physicians can treat displaced patients remotely within hours of a disaster declaration — not weeks.</p>
-            </div>
-          </div>
-          <div class="disaster-item">
-            <div class="disaster-item-icon">🚑</div>
-            <div>
-              <h4>Community Health Worker Rapid Response</h4>
-              <p>Deploy trained CHWs as the first line of care in evacuation zones, reducing ER overcrowding and getting care to people who can't self-evacuate.</p>
-            </div>
-          </div>
-          <div class="disaster-item">
-            <div class="disaster-item-icon">🌎</div>
-            <div>
-              <h4>Climate & Health Equity Task Force</h4>
-              <p>Create a permanent cross-agency body to ensure that disaster preparedness plans center low-income communities, seniors, and people with disabilities.</p>
-            </div>
-          </div>
-        </div>
-        <div class="disaster-quote">
-          <blockquote>"After the LA fires, I treated patients in parking lots. We cannot let this happen again. California needs a governor who will fund disaster preparedness before the next disaster — not after."</blockquote>
-          <div class="disaster-quote-attr">Emergency Medicine Physician, Los Angeles</div>
-          <button onclick="showPage('join')" style="margin-top:28px; background:#87CBCA; color:#1C3D3D; border:none; padding:14px 28px; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.9rem; width:100%;">
-            Add your name to the coalition
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">Doctors for <span>Becerra</span></div>
-        <p>A physician-led coalition supporting Xavier Becerra for Governor of California.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Pages</h4>
-        <ul>
-          <li><button onclick="showPage('home')">Home</button></li>
-          <li><button onclick="showPage('plan')">Health Plan</button></li>
-          <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
-          <li><button onclick="showPage('join')">Join the List</button></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul><li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li></ul>
-      </div>
-    </div>
-    <div class="footer-bottom">Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee.</div>
-  </div>
+ <div class="page-hero">
+ <h1>Disaster Readiness</h1>
+ <p>After the LA fires, California's healthcare system must be built to withstand what's coming. Becerra will make it so.</p>
+ </div>
+ <div class="disaster-section">
+ <div class="disaster-inner">
+ <div class="section-eyebrow">The Plan</div>
+ <h2 class="section-title">A climate-ready healthcare system.</h2>
+ <div class="disaster-grid">
+ <div class="disaster-list">
+ <div class="disaster-item">
+ <div class="disaster-item-icon"></div>
+ <div>
+ <h4>Disaster-Resilient Hospitals</h4>
+ <p>Mandate seismic and wildfire upgrades for all critical care facilities. Ensure backup power and water for every hospital and clinic in high-risk zones.</p>
+ </div>
+ </div>
+ <div class="disaster-item">
+ <div class="disaster-item-icon"></div>
+ <div>
+ <h4>Emergency Drug & Supply Stockpiles</h4>
+ <p>Build a California-controlled strategic reserve of essential medications, PPE, and medical equipment so we're never caught unprepared again.</p>
+ </div>
+ </div>
+ <div class="disaster-item">
+ <div class="disaster-item-icon"></div>
+ <div>
+ <h4>Telehealth Emergency Protocols</h4>
+ <p>Pre-authorize telehealth surge capacity so physicians can treat displaced patients remotely within hours of a disaster declaration - not weeks.</p>
+ </div>
+ </div>
+ <div class="disaster-item">
+ <div class="disaster-item-icon"></div>
+ <div>
+ <h4>Community Health Worker Rapid Response</h4>
+ <p>Deploy trained CHWs as the first line of care in evacuation zones, reducing ER overcrowding and getting care to people who can't self-evacuate.</p>
+ </div>
+ </div>
+ <div class="disaster-item">
+ <div class="disaster-item-icon"></div>
+ <div>
+ <h4>Climate & Health Equity Task Force</h4>
+ <p>Create a permanent cross-agency body to ensure that disaster preparedness plans center low-income communities, seniors, and people with disabilities.</p>
+ </div>
+ </div>
+ </div>
+ <div class="disaster-quote">
+ <blockquote>"After the LA fires, I treated patients in parking lots. We cannot let this happen again. California needs a governor who will fund disaster preparedness before the next disaster - not after."</blockquote>
+ <div class="disaster-quote-attr">Emergency Medicine Physician, Los Angeles</div>
+ <button onclick="showPage('join')" style="margin-top:28px; background:#87CBCA; color:#1C3D3D; border:none; padding:14px 28px; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.9rem; width:100%;">
+ Add your name to the coalition
+ </button>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="footer">
+ <div class="footer-inner">
+ <div class="footer-brand">
+ <div class="footer-logo">Doctors for <span>Becerra</span></div>
+ <p>A physician-led coalition supporting Xavier Becerra for Governor of California.</p>
+ </div>
+ <div class="footer-col">
+ <h4>Pages</h4>
+ <ul>
+ <li><button onclick="showPage('home')">Home</button></li>
+ <li><button onclick="showPage('plan')">Health Plan</button></li>
+ <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
+ <li><button onclick="showPage('join')">Join the List</button></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Contact</h4>
+ <ul><li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li></ul>
+ </div>
+ </div>
+ <div class="footer-bottom">Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee.</div>
+ </div>
 </div>
 
 <!-- ══ JOIN PAGE ══════════════════════════════════════════════════════ -->
 <div class="page" id="page-join">
-  <div class="page-hero">
-    <h1>Add Your Name</h1>
-    <p>Healthcare workers are the most trusted voices in any community. When we speak together, people listen — and politicians act.</p>
-  </div>
-  <div class="join-section">
-    <div class="join-inner">
-      <div class="join-content">
-        <h2>Join hundreds of California physicians standing up for their patients.</h2>
-        <p>Your name matters. Every physician, nurse, and caregiver who signs on strengthens our coalition and sends a clear message: California's healthcare professionals are united behind Xavier Becerra.</p>
-        <ul class="join-benefits">
-          <li>Your name in the coalition's public physician directory</li>
-          <li>Monthly briefings on healthcare policy developments</li>
-          <li>Ready-to-use social content and talking points</li>
-          <li>Invitations to physician roundtables and events</li>
-          <li>Access to our physician video toolkit</li>
-        </ul>
-        <p style="font-size:0.85rem; color:#5A5A5A;">
-          🔒 Your contact info is confidential and will never be sold. You may opt out at any time.
-        </p>
-      </div>
+ <div class="page-hero">
+ <h1>Add Your Name</h1>
+ <p>Healthcare workers are the most trusted voices in any community. When we speak together, people listen - and politicians act.</p>
+ </div>
+ <div class="join-section">
+ <div class="join-inner">
+ <div class="join-content">
+ <h2>Join hundreds of California physicians standing up for their patients.</h2>
+ <p>Your name matters. Every physician, nurse, and caregiver who signs on strengthens our coalition and sends a clear message: California's healthcare professionals are united behind Xavier Becerra.</p>
+ <ul class="join-benefits">
+ <li>Your name in the coalition's public physician directory</li>
+ <li>Monthly briefings on healthcare policy developments</li>
+ <li>Ready-to-use social content and talking points</li>
+ <li>Invitations to physician roundtables and events</li>
+ <li>Access to our physician video toolkit</li>
+ </ul>
+ <p style="font-size:0.85rem; color:#5A5A5A;">
+ Your contact info is confidential and will never be sold. You may opt out at any time.
+ </p>
+ </div>
 
-      <div>
-        <!-- FORM -->
-        <div class="join-form-card" id="joinFormCard">
-          <h3>Physician Sign-Up</h3>
-          <p class="form-sub">Add your name to the coalition — takes less than 60 seconds.</p>
-          <div class="form-error" id="formError"></div>
-          <form id="joinForm" novalidate>
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="fName">Full name <span>*</span></label>
-                <input type="text" id="fName" placeholder="Dr. Jane Rivera" autocomplete="name" />
-              </div>
-              <div class="form-group">
-                <label for="fEmail">Email <span>*</span></label>
-                <input type="email" id="fEmail" placeholder="jane@clinic.org" autocomplete="email" />
-              </div>
-              <div class="form-group">
-                <label for="fPhone">Phone</label>
-                <input type="tel" id="fPhone" placeholder="(213) 555-0100" autocomplete="tel" />
-              </div>
-              <div class="form-group">
-                <label for="fZip">ZIP Code</label>
-                <input type="text" id="fZip" placeholder="90001" />
-              </div>
-              <div class="form-group full">
-                <label for="fRole">Role / Credential</label>
-                <select id="fRole">
-                  <option value="">Select your role</option>
-                  <option>MD</option>
-                  <option>DO</option>
-                  <option>NP</option>
-                  <option>PA</option>
-                  <option>RN</option>
-                  <option>PharmD</option>
-                  <option>Medical Student</option>
-                  <option>Resident / Fellow</option>
-                  <option>Other Healthcare Provider</option>
-                </select>
-              </div>
-              <div class="form-group full">
-                <label for="fSpec">Specialty</label>
-                <select id="fSpec">
-                  <option value="">Select specialty</option>
-                  <option>Internal Medicine</option>
-                  <option>Family Medicine</option>
-                  <option>Pediatrics</option>
-                  <option>OB/GYN</option>
-                  <option>Emergency Medicine</option>
-                  <option>General Surgery</option>
-                  <option>Psychiatry</option>
-                  <option>Oncology</option>
-                  <option>Cardiology</option>
-                  <option>Neurology</option>
-                  <option>Geriatrics</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="form-group full">
-                <label class="form-checkbox">
-                  <input type="checkbox" id="fVolunteer" />
-                  I'd like to volunteer for campaign activities
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn-submit">I Stand with Becerra — Add My Name</button>
-            <p class="form-note">🔒 We will never sell or share your information.</p>
-          </form>
-        </div>
+ <div>
+ <!-- FORM -->
+ <div class="join-form-card" id="joinFormCard">
+ <h3>Physician Sign-Up</h3>
+ <p class="form-sub">Add your name to the coalition - takes less than 60 seconds.</p>
+ <div class="form-error" id="formError"></div>
+ <form id="joinForm" novalidate>
+ <div class="form-grid">
+ <div class="form-group">
+ <label for="fName">Full name <span>*</span></label>
+ <input type="text" id="fName" placeholder="Dr. Jane Rivera" autocomplete="name" />
+ </div>
+ <div class="form-group">
+ <label for="fEmail">Email <span>*</span></label>
+ <input type="email" id="fEmail" placeholder="jane@clinic.org" autocomplete="email" />
+ </div>
+ <div class="form-group">
+ <label for="fPhone">Phone</label>
+ <input type="tel" id="fPhone" placeholder="(213) 555-0100" autocomplete="tel" />
+ </div>
+ <div class="form-group">
+ <label for="fZip">ZIP Code</label>
+ <input type="text" id="fZip" placeholder="90001" />
+ </div>
+ <div class="form-group full">
+ <label for="fRole">Role / Credential</label>
+ <select id="fRole">
+ <option value="">Select your role</option>
+ <option>MD</option>
+ <option>DO</option>
+ <option>NP</option>
+ <option>PA</option>
+ <option>RN</option>
+ <option>PharmD</option>
+ <option>Medical Student</option>
+ <option>Resident / Fellow</option>
+ <option>Other Healthcare Provider</option>
+ </select>
+ </div>
+ <div class="form-group full">
+ <label for="fSpec">Specialty</label>
+ <select id="fSpec">
+ <option value="">Select specialty</option>
+ <option>Internal Medicine</option>
+ <option>Family Medicine</option>
+ <option>Pediatrics</option>
+ <option>OB/GYN</option>
+ <option>Emergency Medicine</option>
+ <option>General Surgery</option>
+ <option>Psychiatry</option>
+ <option>Oncology</option>
+ <option>Cardiology</option>
+ <option>Neurology</option>
+ <option>Geriatrics</option>
+ <option>Other</option>
+ </select>
+ </div>
+ <div class="form-group full">
+ <label class="form-checkbox">
+ <input type="checkbox" id="fVolunteer" />
+ I'd like to volunteer for campaign activities
+ </label>
+ </div>
+ </div>
+ <button type="submit" class="btn-submit">I Stand with Becerra - Add My Name</button>
+ <p class="form-note"> We will never sell or share your information.</p>
+ </form>
+ </div>
 
-        <!-- SUCCESS -->
-        <div class="form-success" id="joinSuccess">
-          <div class="success-icon">✓</div>
-          <h2>You're in!</h2>
-          <p>Thank you for joining Doctors for Becerra. Your voice strengthens our coalition. We'll be in touch with updates, events, and ways to get involved.</p>
-          <button onclick="showPage('home')" style="margin-top:24px; background:#1C3D3D; color:#fff; border:none; padding:12px 28px; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer;">
-            Back to home
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">Doctors for <span>Becerra</span></div>
-        <p>A physician-led coalition supporting Xavier Becerra for Governor of California.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Pages</h4>
-        <ul>
-          <li><button onclick="showPage('home')">Home</button></li>
-          <li><button onclick="showPage('plan')">Health Plan</button></li>
-          <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
-          <li><button onclick="showPage('join')">Join the List</button></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul><li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li></ul>
-      </div>
-    </div>
-    <div class="footer-bottom">Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee.</div>
-  </div>
+ <!-- SUCCESS -->
+ <div class="form-success" id="joinSuccess">
+ <div class="success-icon"></div>
+ <h2>You're in!</h2>
+ <p>Thank you for joining Doctors for Becerra. Your voice strengthens our coalition. We'll be in touch with updates, events, and ways to get involved.</p>
+ <button onclick="showPage('home')" style="margin-top:24px; background:#1C3D3D; color:#fff; border:none; padding:12px 28px; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer;">
+ Back to home
+ </button>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="footer">
+ <div class="footer-inner">
+ <div class="footer-brand">
+ <div class="footer-logo">Doctors for <span>Becerra</span></div>
+ <p>A physician-led coalition supporting Xavier Becerra for Governor of California.</p>
+ </div>
+ <div class="footer-col">
+ <h4>Pages</h4>
+ <ul>
+ <li><button onclick="showPage('home')">Home</button></li>
+ <li><button onclick="showPage('plan')">Health Plan</button></li>
+ <li><button onclick="showPage('disaster')">Disaster Readiness</button></li>
+ <li><button onclick="showPage('join')">Join the List</button></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Contact</h4>
+ <ul><li><a href="mailto:info@doctorsforbecerra.com" style="font-size:0.87rem; color:rgba(255,255,255,0.65);">info@doctorsforbecerra.com</a></li></ul>
+ </div>
+ </div>
+ <div class="footer-bottom">Paid for by Doctors for Becerra. Not authorized by any candidate or candidate's committee.</div>
+ </div>
 </div>
 
 <script>
-  // ── PAGE NAVIGATION ──
-  function showPage(name) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
-    document.getElementById('page-' + name).classList.add('active');
-    const navBtn = document.getElementById('nav-' + name);
-    if (navBtn) navBtn.classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('navLinks').classList.remove('open');
-  }
+ // ── PAGE NAVIGATION ──
+ function showPage(name) {
+ document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+ document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
+ document.getElementById('page-' + name).classList.add('active');
+ const navBtn = document.getElementById('nav-' + name);
+ if (navBtn) navBtn.classList.add('active');
+ window.scrollTo({ top: 0, behavior: 'smooth' });
+ document.getElementById('navLinks').classList.remove('open');
+ }
 
-  // ── MOBILE NAV ──
-  document.getElementById('mobileBtn').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
+ // ── MOBILE NAV ──
+ document.getElementById('mobileBtn').addEventListener('click', function() {
+ document.getElementById('navLinks').classList.toggle('open');
+ });
 
-  // ── JOIN FORM — sends to Google Form ──
-  document.getElementById('joinForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name  = document.getElementById('fName').value.trim();
-    const email = document.getElementById('fEmail').value.trim();
-    const err   = document.getElementById('formError');
+ // ── JOIN FORM - sends to Google Form ──
+ document.getElementById('joinForm').addEventListener('submit', function(e) {
+ e.preventDefault();
+ const name = document.getElementById('fName').value.trim();
+ const email = document.getElementById('fEmail').value.trim();
+ const err = document.getElementById('formError');
 
-    if (!name || !email) {
-      err.textContent = 'Please add your name and email so we can reach you.';
-      err.classList.add('show');
-      return;
-    }
-    err.classList.remove('show');
+ if (!name || !email) {
+ err.textContent = 'Please add your name and email so we can reach you.';
+ err.classList.add('show');
+ return;
+ }
+ err.classList.remove('show');
 
-    // Open Google Form in new tab
-    window.open('https://forms.gle/rAj8PxyS9YDSqKVa6', '_blank');
+ // Open Google Form in new tab
+ window.open('https://forms.gle/rAj8PxyS9YDSqKVa6', '_blank');
 
-    // Show success message on this page
-    document.getElementById('joinFormCard').style.display = 'none';
-    document.getElementById('joinSuccess').classList.add('show');
-  });
+ // Show success message on this page
+ document.getElementById('joinFormCard').style.display = 'none';
+ document.getElementById('joinSuccess').classList.add('show');
+ });
 </script>
 </body>
 </html>
